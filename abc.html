@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+      <title>Irtaza Malik Portfolio</title>  
+    <meta charset="UTF-8">
+  
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <style>
+  .main-holder{
+	background-color:#e9edee;
+	height : 600px;
+	width: 80%;
+	margin:0 auto;
+  }
+	  .top-outer-section{
+	  background-color:#879cdf;
+	  height: 500px;
+	  
+	  }
+  .top-inner-section{
+  background-color:#ff8374;
+  width: 78%;
+  margin-left:1%;
+  margin-top: 100px;
+  position:absolute;
+  height: 520px;
+  }
+.circular-div  {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+	width: 250px;
+    height: 250px;
+    background: aqua;
+	position:absolute;
+	margin-left: 30%;
+	margin-top: 35px;
+	z-index:1000;
+    border: 10px solid #fee24c;
+}
+
+  .top-inner-content{
+  padding-top: 250px;
+  }
+  .lower-section{
+  padding-top:50px;
+  z-index:20000;
+  background-color:#e9edee;
+  width: 80%;
+	margin:0 auto;
+	background-color:#e9edee;
+  }
+  .footer{
+    width: 80%;
+	margin:0 auto;
+		background-color:#879cdf;
+		height:300px;
+  }
+  .box-container{
+  padding-top:40px;
+  text-align:center;
+  padding-bottom:200px;
+  }
+  .box{
+  background-color:#ff8374;
+  height:100px;
+  width: 30%;
+  display:inline-block;
+  margin-left:20px;
+  margin-top:10px;
+  text-align:center;
+  color:white;
+  }
+  .box a{
+  color:white;
+  text-decoration:none;
+  }
+  .links{
+  margin-left: 40px;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="main-holder">
+	
+	
+	<div class=" top-outer-section">
+		<div class="circular-div">
+	
+	</div>
+	<div class=" top-inner-section">
+	
+	
+	
+	<div class=" top-inner-content">
+	<h2 style="text-align:center;color:white;">Hi!</h2>
+		<br><br>
+	<h2 style="text-align:center;color:white;">My name is Irtaza Malik</h2>
+	<br><br>
+	<p style="text-align:center;color:white;">Currently @ University of Toronto</p>
+	<div class="links">
+	<div  style="height:30px;" class="box">
+	<p><a href="#">Github</a></p>
+	</div>
+	<div style="height:30px;" class="box">
+	<p><a href="#" id="Location">Mississau</a></p>
+	</div>
+	<div style="height:30px;" class="box">
+	<p><a href="#">Linkdin</a></p>
+	</div>
+	</div>
+	</div>
+		
+	</div>
+
+  </div>
+  </div>
+  	<div class="container lower-section">
+	 
+	<h3 style="text-align:center;"> I build things and teach people to code </h3>
+	<div class="box-container">
+	<div class="patition-1">
+		<div class="box">
+	<h2>Public Repository</h2>
+	<p id="pb_repo">16</p>
+	</div>
+	<div class="box">
+	<h2>Followers</h2>
+	<p id="fl_1">0</p>
+	</div>
+	</div>
+	
+		<div class="patition-2">
+	<div class=" box">
+	<h2>Github Starters</h2>
+	<p> 65 </p>
+	</div>
+	<div class=" box">
+	<h2>Following</h2>
+	<p id="fl_2">0</p>
+	</div>
+	</div>
+	</div>
+
+  </div>
+  <div class="footer">
+  </div>
+  <script>
+  
+  let foo = prompt('Type your color');
+let bar = confirm('Please confirm');
+if(bar===true){
+for(var i=0, len=document.getElementsByClassName("box").length; i<len; i++)
+    {
+document.getElementsByClassName("box")[i].style.backgroundColor = foo;
+}
+document.getElementsByClassName("top-inner-section")[0].style.backgroundColor = foo;
+}
+  
+  </script>
+  </body>
+  </html>
