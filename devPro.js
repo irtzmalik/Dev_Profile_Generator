@@ -63,11 +63,13 @@ axios.get(URL).then(function(response) {
            if (err) return console.log(err);
         }); 
 
-        /*var result3;
-        result3 = data.toString('utf8').replace(/<p id="fl_2">(.*)<\/p>/g, '<p id="fl_2">' + followers + '</p>'); 
-        fs.writeFile('abc.html', result3, 'utf8', function (err) {
-          if (err) return console.log(err);
-       }); */
+        console.log(followers)
+
+      //   var result3;
+      //   result3 = data.toString('utf8').replace(/<p id="fl_2">(.*)<\/p>/g, '<p id="fl_2">' + followers + '</p>'); 
+      //   fs.writeFile('abc.html', result3, 'utf8', function (err) {
+      //     if (err) return console.log(err);
+      //  }); 
 
       /* var result4;
        result4 = data.toString('utf8').replace(/<a href="#" id="Location">(.*)<\/a>/g, '<a href="#" id="Location">' + location + '</a>'); 
@@ -75,13 +77,27 @@ axios.get(URL).then(function(response) {
          if (err) return console.log(err);
       }); */
 
-      /*var result5;
-      var bg_color = "blue"; 
-      result5 = data.toString('utf8').replace(".box{background-color:", `.box{background-color:${bg_color}`); 
-      fs.writeFile('abc.html', result5, 'utf8', function (err) {
-        if (err) return console.log(err);
-      }); */
-      //console.log($('$Location').text())
+      // var result5;
+      // result5 = data.toString('utf8').replace(".box{background-color:", `.box{background-color:${bg_color}`); 
+      // fs.writeFile('abc.html', result5, 'utf8', function (err) {
+        //   if (err) return console.log(err);
+        // });
+
+
+
+      var bg_color = "green"; 
+
+      //Add background-color to element with id=Location
+      $('#Location').css("background-color", `${bg_color}`)
+      $('#Location').text(`${location}`)
+
+      //Store raw html in result 5 variable
+      var result = $.html()
+
+      //write new html to file
+      fs.writeFile('abc.html', result, 'utf8', function (err) {
+          if (err) return console.log(err);
+        });
 });
   
 });
